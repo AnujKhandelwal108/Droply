@@ -9,7 +9,7 @@ export const signUpSchema = z
         password: z
             .string()
             .min(1,{message:"Password is required"})
-            .min(8,{message:"Password should be minimum f 8 characters"}),
+            .min(8,{message:"Password should be minimum of 8 characters"}),
         passwordConfirmation: z
             .string()
             .min(1,{message:"Please confirm your password"}),
